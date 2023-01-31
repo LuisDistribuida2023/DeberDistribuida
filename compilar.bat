@@ -1,5 +1,5 @@
 git clone https://github.com/LuisDistribuida2023/DeberDistribuida.git && 
-cd ./app && cd ./app-authors && gradlew quarkusBuild && 
+cd ./DeberDistribuida && cd ./app-authors && gradlew quarkusBuild && 
 docker build -t lebriones/app-authors:1.0.0 . && 
 cd .. && 
 cd ./app-books && gradlew installDist && 
