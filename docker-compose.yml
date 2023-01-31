@@ -1,7 +1,7 @@
 version: '3'
 services:
   app-book:
-    image: lebriones/app-books:1.0.0
+    image: lebriones2/app-books:1.0.0
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.app-book.rule=PathPrefix(`/books`)"
@@ -17,7 +17,7 @@ services:
     expose:
       - 7001
   app-author:
-    image: lebriones/app-authors:1.0.0
+    image: lebriones2/app-authors:1.0.0
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.app-author.rule=PathPrefix(`/authors`)"
@@ -33,7 +33,7 @@ services:
     expose:
       - 7070
   app-web:
-    image: lebriones/app-web:1.0.0
+    image: lebriones2/app-web:1.0.0
     deploy:
       replicas: 1
     ports:
